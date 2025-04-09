@@ -55,11 +55,13 @@ var provider = {
 	},
 
 	seed: function(seed) {
-		var prev_generator = generator;
-		generator = new MarsenneTwister();
-		generator.init_seed(seed);
+		var prev_generator = this.generator;
+		this.generator = new MarsenneTwister();
+		this.generator.init_seed(seed);
 		return prev_generator;
 	},
+
+	generator
 };
 
 module.exports = provider;
