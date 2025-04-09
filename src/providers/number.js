@@ -56,6 +56,10 @@ var provider = {
 
 	seed: function(seed) {
 		generator.init_seed(seed);
+	},
+
+	generator: function () {
+		return generator
 	}
 };
 
