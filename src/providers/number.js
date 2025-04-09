@@ -56,7 +56,7 @@ var provider = {
 
 	seed: function(seed) {
 		var prev_generator = generator;
-		generator = new MarsenneTwister();
+		generator = new MersenneTwister();
 		generator.init_seed(seed);
 		return prev_generator;
 	},
